@@ -1,0 +1,28 @@
+<!-- Write a programme that checks following conditions for any two numbers and display appropriate message.  
+1) If pre-increament of 1st number is grater than post-increament of 2nd number then perform subtraction. 
+2) If pre-increament of 1st number is less than post-increament of 2nd  number then perform addition. 
+3) If post-increament of 1st number is equal to post-increaemnt of 2nd number then perform multiplication. 
+4) If pre-increament of 1st number is equal to pre-increament of 2nd number perform 1st number / 2nd number. -->
+<html>
+<head>
+	<script>
+		var a = parseInt(prompt("Enter a"));
+		var b = parseInt(prompt("Enter b"));
+		if (++a > b++) 
+		{
+			document.write(a-b);
+		}else if(++a < ++b)
+		{
+			document.write(a+b);
+		}else if (a++ == b++)
+		{
+			document.write(a*b);
+		}else if(++a == ++b)
+		{
+			document.write(a/b);
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>
