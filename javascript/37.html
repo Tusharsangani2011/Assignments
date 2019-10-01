@@ -1,0 +1,60 @@
+<!-- Write a programme that check values of three numbers and perform following operations.  
+1) If a=50, b=20 and c=10 then make sum of a, b and c. 
+2) If a=40, b=20 and c=20 then subtract sum of b and c from a. 
+3) If a=10, b=10 and c=10 then multiplication of a, b and c.  
+Display above result using <h1> tag-->
+<html>
+<body>
+	<h1 id="d"></h1>
+	<script>
+		var a = parseInt(prompt("Enter a"));
+		var b = parseInt(prompt("Enter b"));
+		var c = parseInt(prompt("Enter c"));
+		function add() {
+			var g = a+b+c;
+			document.getElementById("d").innerHTML = g;
+		}
+		function sub() {
+			var g = a-(b+c);
+			document.getElementById("d").innerHTML = g;
+		}
+		function mul() {
+			var g = a*b*c;
+			document.getElementById("d").innerHTML = g;
+		}
+		switch(a)
+		{
+			case 50: switch(b)
+			{
+				case 40: switch(c)
+				{
+					case 10: add();
+					break;
+				}
+			break;	
+			}
+		break;
+			case 40: switch(b)
+			{
+				case 20: switch(c)
+				{
+					case 20: sub();
+					break;
+				}
+			break;	
+			}
+		break;
+			case 10: switch(b)
+			{
+				case 10: switch(c)
+				{
+					case 10: mul();
+					break;
+				}
+			break;	
+			}
+		break;			
+		}
+	</script>
+</body>
+</html>
