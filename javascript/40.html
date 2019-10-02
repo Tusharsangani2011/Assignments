@@ -1,0 +1,15 @@
+<!-- Write a programme that used three digit number and perform sum of quotient
+upto remainder left 0 or 1. -->
+<html>
+<body>
+  <script>
+  var a = parseInt(prompt("Enter 3 digit number"));
+  var q = 0,b = 2;
+  while (a%b==0 || a%b==1) {
+    q = q+(a/b);
+    a = a/b;
+  }
+  document.write(q);
+  </script>
+</body>
+</html>
